@@ -4,4 +4,4 @@
 
 .e.euler3:{max a where .u.isPrime each a:.u.factors x};.e.euler3[600851475143]
 
-.e.euler4:{[z] max a where a="J"$reverse each string a:distinct raze (floor (z%10) +til (z-floor(z%10))) {x*y} \: (floor (z%10) +til (z-floor(z%10)))}
+.e.euler4:{[z] z:10 xexp z;max a where a="J"$reverse each string a:distinct raze (floor (z%10) +til (z-floor(z%10))) {x*y} \: (floor (z%10) +til (z-floor(z%10)))}

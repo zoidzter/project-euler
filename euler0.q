@@ -7,3 +7,6 @@
 .e.euler4:{[z] z:"i"$10 xexp z;max a where a="J"$reverse each string a:distinct raze (floor (z%10) +til (z-floor(z%10))) {x*y} \: (floor (z%10) +til (z-floor(z%10)))};.e.euler4[3]
 
 .e.euler5:{[j] inc:prd where {2=count where 0=( x mod ) each 1 +til x} each  til j+1;i:inc;while[not 0=sum (i mod)  each 1 +til j;i:i+inc];i};.e.euler5[20]
+
+/x is the upper limit - i.e 10 if for first 10 natural numbers/
+.e.euler6:{(+/[0;1 +til x] xexp 2) - sum xexp[;2] each (1 +til x)};.e.euler[100]

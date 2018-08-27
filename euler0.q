@@ -9,4 +9,4 @@
 .e.euler5:{[j] inc:prd where {2=count where 0=( x mod ) each 1 +til x} each  til j+1;i:inc;while[not 0=sum (i mod)  each 1 +til j;i:i+inc];i};.e.euler5[20]
 
 /x is the upper limit - i.e 10 if for first 10 natural numbers/
-.e.euler6:{(+/[0;1 +til x] xexp 2) - sum xexp[;2] each (1 +til x)};.e.euler[100]
+.e.euler6:{(+/[0;1 +til x] xexp 2) - sum xexp[;2] each (1 +til x)};.e.euler6[100]

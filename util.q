@@ -3,3 +3,6 @@
 .u.primesTil:{2,3_where .u.isPrime each til x};
 
 .u.factors:{[j] a,(j {floor x%y} \: desc a:where 0=(j mod ) each til (ceiling sqrt j)+1)};
+
+.u.pandigital:{ all(y +til count l) in l:10 vs x};
+
